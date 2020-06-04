@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-slider</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="slide-holder">
+      <div class="slide fading">
+        <img
+          src="./images/img_lights_wide.jpg"
+          alt="Aurora"
+          style="min-width: 100%;"
+        />
+        <div class="text-wrapper">Aurora</div>
+      </div>
+
+      <div class="slide fading">
+        <img
+          src="./images/img_mountains_wide.jpg"
+          alt="Mountain view"
+          style="max-width: 100%;"
+        />
+        <div class="text-wrapper">Mountain view</div>
+      </div>
+
+      <div class="slide fading">
+        <img
+          src="./images/img_nature_wide.jpg"
+          alt="Nature"
+          style="max-width: 100%;"
+        />
+        <div class="text-wrapper">Nature View</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div class="span-div">
+      <span class="span-wrap" onclick="currentSlide(1)"></span>
+      <span class="span-wrap" onclick="currentSlide(2)"></span>
+      <span class="span-wrap" onclick="currentSlide(3)"></span>
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
+</html>
